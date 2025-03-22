@@ -1,16 +1,16 @@
-import { lazy, Suspense, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { ErrorBoundary } from "react-error-boundary"
+import { lazy, Suspense, useState } from 'react';
+import reactLogo from './assets/react.svg';
+import viteLogo from '/vite.svg';
+import './App.css';
+import { ErrorBoundary } from 'react-error-boundary';
 
 const Remote = lazy(
-	// @ts-expect-error @ts-ignore
-	async () => import('remote/remote-app'),
+  // @ts-expect-error @ts-ignore
+  async () => import('remote/remote-app')
 );
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
@@ -34,13 +34,13 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-			<Suspense fallback="Loading...">
+      <Suspense fallback="Loading...">
         <ErrorBoundary fallback="Something went wrong...">
           <Remote />
         </ErrorBoundary>
-			</Suspense>
+      </Suspense>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

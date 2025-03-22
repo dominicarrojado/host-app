@@ -7,7 +7,7 @@
     "module": "ESNext",
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
-		"resolveJsonModule": true,
+    "resolveJsonModule": true,
 
     /* Bundler mode */
     "moduleResolution": "Node",
@@ -23,8 +23,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": [
-    "vite.config.ts",
-    "module-federation/vite-importmap-shim.ts"
-  ]
+  "include": ["vite.config.ts", "module-federation/vite-importmap-shim.ts"]
 }
