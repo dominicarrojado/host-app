@@ -11,6 +11,8 @@
     "preview": "yarn build && vite preview --port 4173"
   },
   "dependencies": {
+    "@fontsource/poppins": "^5.2.5",
+    "@fontsource/roboto": "^5.2.5",
     "@tailwindcss/vite": "^4.0.15",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
